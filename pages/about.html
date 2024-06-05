@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+        h1 {
+            text-align: center;
+            margin-top: 120px;
+            margin-bottom: 20px;
+        }
+
+        h1:hover {
+            color: #C06B3E;
+            cursor: pointer;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container span {
+            color: #C06B3E;
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">KBT<span>|<small style="font-size: 0.5em;"> Koul Bach
+                        Tgder</small></span></a>
+            <ul class="menu-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/products.html">Products</a></li>
+                <li><a href="../pages/about.html" style="color: #C06B3E;">About Us</a></li>
+                <li><a href="../pages/tutorial.html">Tutorial</a></li>
+                <li><a href="../pages/contact.html">Contact us</a></li>
+            </ul>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+    <h1>About Us</h1>
+    <div class="container">
+        <p><span>W</span>elcome to KBT, where the bond of two gym aficionados blossoms into a passion for delivering
+            exactly what our
+            fellow gym bros crave. As classmates who share not only a dedication to fitness but also an intuitive
+            understanding of what it takes to thrive in the gym, we embarked on this journey to bring our unique insight
+            and expertise to the fitness community. With KBT, we aspire to transform our shared vision into reality,
+            starting from ground zero and building a platform that not only meets but exceeds the expectations of our
+            fellow fitness enthusiasts. Join us as we embark on this exhilarating adventure, aiming not only to grow our
+            enterprise but also to inspire and empower others along the way.</p>
+    </div>
+    <script>
+        const header = document.querySelector("header");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        // Toggle mobile menu on hamburger button click
+        menuBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => header.classList.remove("show-mobile-menu"));
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
